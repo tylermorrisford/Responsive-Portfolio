@@ -1,0 +1,222 @@
+/* Body and element styles */
+body {
+    background-image: url("qbkls.png");
+}
+
+h1,
+ h2 {
+     font-family:'Georgia', Times, Times New Roman, serif;
+ }
+
+p, 
+ a {
+     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+     color: #777777;   
+    }
+
+/* header class styles */
+.headingbar {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: 2px solid #cccccc;
+}
+
+
+.header {
+    width: 960px;
+    margin: 0 auto;
+}
+.myname {
+    background-color: #4aaaa5;
+    color: white;
+    float: left;
+    height: 80px;
+    width: 195px;
+    padding: auto 10px auto;
+    text-align: center;
+}
+
+.myname:hover {
+    background-color:white;
+    color:#4aaaa5;
+}
+
+.nav {
+    float: right;
+    padding-top: 30px;
+}
+
+.navlist {
+    margin: auto 10px;
+    text-decoration: none;
+}
+
+.navlist:hover {
+    color:black;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 100px auto;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+
+/* About Me Styles */
+ 
+.aboutme {
+    padding: 10px;
+}
+
+.pagetitle {
+    color: #4aaaa5;
+    font-size: 1rem;
+}
+
+.img {
+    float:left;
+    margin: 10px 15px 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+}
+
+.floattext {
+    margin-top: 15px;
+}
+
+.biolink {
+    text-decoration: none;
+}
+
+.biolink:hover {
+    color:black;
+}
+
+/* Portfolio Styles */
+
+
+.portfolio {
+    padding: 10px; 
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+/* This flex doesn't work for making the box responsive, 
+it only really affects the layout(because its parent isn't flex?) */
+
+.ptitle {
+    color: #4aaaa5;
+    font-size: 2rem;
+
+}
+
+.portbox1 {
+    width: 250px;
+    height: 250px;
+    background-image: url("../images/john.png");
+    opacity: 0.7;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+
+.portbox2 {
+    width: 250px;
+    height: 250px;
+    background-image: url("../images/dice.png");
+    opacity: 0.7;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+
+.portbox3 {
+    width: 250px;
+    height: 250px;
+    background-image: url("../images/drums.png");
+    opacity: 0.7;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+
+.portbox4 {
+    width: 250px;
+    height: 250px;
+    background-image: url("../images/ipad-startup.jpg");
+    opacity: 0.7;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+
+/* add hover effect on portbox1-4 */
+.portbox1:hover {
+    opacity: 1;
+} 
+
+.portbox2:hover {
+    opacity: 1;
+}
+
+.portbox3:hover {
+    opacity: 1;
+}
+    
+.portbox4:hover {
+    opacity: 1;
+}
+
+
+.pbtitle {
+    position: relative;
+    top: 205px;
+    width: 100%;
+    height: 45px;
+    background-color: #4aaaa5;
+    
+}
+
+.pbttext {
+    color: #ffffff;
+    padding-top: 13px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Contact Styles */
+
+.contact {
+    padding: 10px;
+}
+
+/* Footer Styles */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: #666666;
+    color: white;
+    border-top: 8px solid #4aaaa5;
+    text-align: center;
+}
+
+.foottext {
+    padding-top: 12px;
+    color: #bbbbbb;
+}
