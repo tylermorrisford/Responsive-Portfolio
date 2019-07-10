@@ -1,8 +1,6 @@
 /* Body and element styles */
 body {
     background-image: url("qbkls.png");
-    margin: 0;
-    padding: 0;
 }
 
 h1,
@@ -18,6 +16,10 @@ p,
      text-decoration: none;   
     }
 
+p {
+    margin: 10px 0;
+    line-height: 1.1;
+}
     /* starting with smallest screen size */
 .headingbar {
     background-color: white;
@@ -46,13 +48,13 @@ p,
 }
 
 .nav {
-    /* float: right; */
     margin-top: 0;
     background-color: white;
     text-align: center;
     height: 30px;
     padding-top: 10px;
     text-decoration: none;
+    border-bottom: 1px solid #ddd;
 }
 
 .nav a {
@@ -60,16 +62,59 @@ p,
 }
 
 .wrapper {
-    width: 100%;
-    margin: 100px auto;
+    width: 95%;
+    margin: 70px auto;
     background-color: white;
     border: 1px solid #ddd;
 }
 
+/* small screens ABOUT ME */
+.aboutme {
+    padding: 10px;
+}
 
+.pagetitle {
+    color: #4aaaa5;
+    font-size: 2rem;
+    text-align: center;
+}
 
+.img { 
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    display: block;
+}
 
+.floattext {
+    margin-top: 15px;
+}
 
+.biolink {
+    text-decoration: none;
+}
+
+.biolink:hover {
+    color:black;
+}
+/* Footer SMALL */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #666666;
+    color: white;
+    border-top: 4px solid #4aaaa5;
+    text-align: center;
+}
+
+.foottext {
+    padding-top: 5px;
+    color: #bbbbbb;
+}
 
 
 
@@ -130,7 +175,7 @@ p,
 
 /* About Me Styles */
  
-.aboutme {
+/* .aboutme {
     padding: 10px;
 }
 
@@ -139,9 +184,9 @@ p,
     font-size: 1rem;
 }
 
-.img {
+.img { */
     /* float:left; */
-    margin: 10px 15px 8px 0;
+    /* margin: 10px 15px 8px 0;
     border: 1px solid #ddd;
     border-radius: 100%;
 }
@@ -156,7 +201,7 @@ p,
 
 .biolink:hover {
     color:black;
-}
+} */
 
 /* Portfolio Styles */
 
@@ -264,7 +309,7 @@ it only really affects the layout(because its parent isn't flex?) */
 
 /* Footer Styles */
 
-.footer {
+/* .footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -279,4 +324,4 @@ it only really affects the layout(because its parent isn't flex?) */
 .foottext {
     padding-top: 12px;
     color: #bbbbbb;
-}
+} */
