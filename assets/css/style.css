@@ -100,9 +100,8 @@ p {
 /* Footer SMALL */
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     width: 100%;
     height: 40px;
     background-color: #666666;
@@ -112,7 +111,7 @@ p {
 }
 
 .foottext {
-    padding-top: 5px;
+    padding-top: 2px;
     color: #bbbbbb;
 }
 
