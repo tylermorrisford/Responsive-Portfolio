@@ -1,4 +1,4 @@
-/* Body and element styles */
+/* global Body and element styles */
 body {
     background-image: url("qbkls.png");
 }
@@ -19,6 +19,28 @@ p,
 p {
     margin: 10px 0;
     line-height: 1.1;
+}
+
+/* global classes */
+
+.container {
+    padding: 10px;
+}
+
+.pbtitle {
+    position: relative;
+    top: 205px;
+    width: 100%;
+    height: 45px;
+    background-color: #4aaaa5;
+    
+}
+
+.pbttext {
+    color: #ffffff;
+    padding-top: 13px;
+    text-align: center;
+    font-weight: 600;
 }
     /* starting with smallest screen size */
 .headingbar {
@@ -63,7 +85,7 @@ p {
 
 .wrapper {
     width: 95%;
-    margin: 70px auto;
+    margin: 60px auto;
     background-color: white;
     border: 1px solid #ddd;
 }
@@ -115,9 +137,59 @@ p {
     color: #bbbbbb;
 }
 
+/* portfolio SMALL */
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+} 
+/* This flex doesn't work for making the box responsive, 
+it only really affects the layout(because its parent isn't flex?) */
+
+.ptitle {
+    color: #4aaaa5;
+    font-size: 2rem;
+}
+
+.portbox1 {
+    width: 250px;
+    height: 250px;
+    background-image: url("../images/john.png");
+    display: block;
+    margin: 10px auto 10px;
+    border: 1px solid #ddd;
+}
+
+.portbox2 {
+    width: 250px;
+    height: 250px;
+    background-image: url("../images/dice.png");
+    display: block;
+    margin: 10px auto 10px;
+    border: 1px solid #ddd;
+}
+
+.portbox3 {
+    width: 250px;
+    height: 250px;
+    background-image: url("../images/drums.png");
+    display: block;
+    margin: 10px auto 10px;
+    border: 1px solid #ddd;
+}
+
+.portbox4 {
+    width: 250px;
+    height: 250px;
+    background-image: url("../images/ipad-startup.jpg");
+    display: block;
+    margin: 10px auto 10px;
+    border: 1px solid #ddd;
+}
 
 
-
+/* There are no SMALL style rules for Contact */
 
 
 /* header class styles */
@@ -205,14 +277,10 @@ p {
 /* Portfolio Styles */
 
 
-.portfolio {
-    padding: 10px; 
-}
-
 .flex-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    align-items: center;
 }
 /* This flex doesn't work for making the box responsive, 
 it only really affects the layout(because its parent isn't flex?) */
@@ -284,27 +352,9 @@ it only really affects the layout(because its parent isn't flex?) */
 } */
 
 
-.pbtitle {
-    position: relative;
-    top: 205px;
-    width: 100%;
-    height: 45px;
-    background-color: #4aaaa5;
-    
-}
-
-.pbttext {
-    color: #ffffff;
-    padding-top: 13px;
-    text-align: center;
-    font-weight: 600;
-}
 
 /* Contact Styles */
 
-/* .contact {
-    padding: 10px;
-} */
 
 /* Footer Styles */
 
