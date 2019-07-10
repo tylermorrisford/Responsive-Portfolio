@@ -1,6 +1,8 @@
 /* Body and element styles */
 body {
     background-image: url("qbkls.png");
+    margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -14,8 +16,56 @@ p,
      color: #777777;   
     }
 
-/* header class styles */
+    /* starting with smallest screen size */
 .headingbar {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid #cccccc;
+    margin-top: 0;
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+}
+.myname {
+    background-color: #4aaaa5;
+    color: white;
+    /* float: left; */
+    height: 80px;
+    width: 195px;
+    margin: 0 auto 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav {
+    /* float: right; */
+    margin-top: 80px;
+    background-color: white;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 100px auto;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* header class styles */
+/* .headingbar {
     background-color: white;
     width: 100%;
     height: 80px;
@@ -24,7 +74,6 @@ p,
     top: 0;
     border-bottom: 2px solid #cccccc;
 }
-
 
 .header {
     width: 960px;
@@ -64,7 +113,7 @@ p,
     margin: 100px auto;
     background-color: white;
     border: 1px solid #ddd;
-}
+} */
 
 
 /* About Me Styles */
@@ -79,7 +128,7 @@ p,
 }
 
 .img {
-    float:left;
+    /* float:left; */
     margin: 10px 15px 8px 0;
     border: 1px solid #ddd;
     border-radius: 100%;
@@ -115,7 +164,6 @@ it only really affects the layout(because its parent isn't flex?) */
 .ptitle {
     color: #4aaaa5;
     font-size: 2rem;
-
 }
 
 .portbox1 {
@@ -163,7 +211,7 @@ it only really affects the layout(because its parent isn't flex?) */
 }
 
 /* add hover effect on portbox1-4 */
-.portbox1:hover {
+/* .portbox1:hover {
     opacity: 1;
 } 
 
@@ -177,7 +225,7 @@ it only really affects the layout(because its parent isn't flex?) */
     
 .portbox4:hover {
     opacity: 1;
-}
+} */
 
 
 .pbtitle {
@@ -198,9 +246,9 @@ it only really affects the layout(because its parent isn't flex?) */
 
 /* Contact Styles */
 
-.contact {
+/* .contact {
     padding: 10px;
-}
+} */
 
 /* Footer Styles */
 
