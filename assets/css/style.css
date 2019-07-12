@@ -74,6 +74,10 @@ p {
     text-align: center;
 }
 
+.myname h1 {
+    padding-top: 20px;
+}
+
 .myname:hover {
     background-color:white;
     color:#4aaaa5;
@@ -253,9 +257,12 @@ p {
         float: left;
         height: 80px;
         width: 195px;
-        padding: auto 10px auto;
         text-align: center;
         font-size: 2rem;
+    }
+
+    .myname h1 {
+        padding-top: 20px;
     }
     
     .myname:hover {
