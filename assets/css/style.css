@@ -72,11 +72,24 @@ p {
     padding: auto 10px auto;
     font-size: 2rem;
     text-align: center;
-}
+    animation-name: colorname;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes colorname {
+    from {color: white;}
+    to {color: #4aaaa5;}
+    from {background-color: #4aaaa5;}
+    to {background-color: white;}
+  }
+
 
 .myname h1 {
     padding-top: 20px;
 }
+
 
 .myname:hover {
     background-color:white;
@@ -259,7 +272,18 @@ p {
         width: 195px;
         text-align: center;
         font-size: 2rem;
+        animation-name: colorname;
+        animation-duration: 6s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
     }
+
+    @keyframes colorname {
+        from {color: white;}
+        to {color: #4aaaa5;}
+        from {background-color: #4aaaa5;}
+        to {background-color: white;}
+      }
 
     .myname h1 {
         padding-top: 20px;
@@ -426,7 +450,18 @@ p {
         text-align: center;
         text-decoration: none;
         font-family:'Georgia', Times, Times New Roman, serif;
+        /* animation-name: colorname;
+        animation-duration: 5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite; */
     }
+/* commenting the animation on the smaller size */
+    /* @keyframes colorname {
+        from {color: white;}
+        to {color: #4aaaa5;}
+        from {background-color: #4aaaa5;}
+        to {background-color: white;}
+      } */
     
     .nav {
         margin-top: 0;
