@@ -43,6 +43,9 @@ p {
     font-weight: 600;
 }
     /* starting with smallest screen size */
+
+@media screen and (max-width: 640px) {}
+
 .headingbar {
     background-color: white;
     width: 100%;
@@ -122,6 +125,9 @@ p {
 /* Footer SMALL */
 
 .footer {
+    position: fixed;
+    bottom:0;
+    left:0;
     margin-bottom: 0;
     margin-left: 0;
     width: 100%;
@@ -144,8 +150,6 @@ p {
     flex-flow: row wrap;
     justify-content: space-around;
 } 
-/* This flex doesn't work for making the box responsive, 
-it only really affects the layout(because its parent isn't flex?) */
 
 .ptitle {
     color: #4aaaa5;
@@ -277,11 +281,11 @@ it only really affects the layout(because its parent isn't flex?) */
 /* Portfolio Styles */
 
 
-.flex-container {
+/* .flex-container {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-}
+} */
 /* This flex doesn't work for making the box responsive, 
 it only really affects the layout(because its parent isn't flex?) */
 
