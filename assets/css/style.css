@@ -42,162 +42,14 @@ p {
     text-align: center;
     font-weight: 600;
 }
-    /* starting with smallest screen size */
 
-@media screen and (max-width: 640px) {}
+/* for Medium and bigger screens */
 
-.headingbar {
-    background-color: white;
-    width: 100%;
-    height: 60px;
-    border-bottom: 2px solid #cccccc;
-    margin-top: 0;
-}
-
-.header {
-    width: 100%;
-    margin: 0 auto;
-}
-.myname {
-    background-color: #4aaaa5;
-    color: white;
-    /* float: left; */
-    padding-top: 5px;
-    height: 50px;
-    width: 100%;
-    margin: 0 auto 0;
-    font-size: 2rem;
-    text-align: center;
-    text-decoration: none;
-    font-family:'Georgia', Times, Times New Roman, serif;
-}
-
-.nav {
-    margin-top: 0;
-    background-color: white;
-    text-align: center;
-    height: 30px;
-    padding-top: 10px;
-    text-decoration: none;
-    border-bottom: 1px solid #ddd;
-}
-
-.nav a {
-    padding: 0 5px 0;
-}
-
-.wrapper {
-    width: 95%;
-    margin: 60px auto;
-    background-color: white;
-    border: 1px solid #ddd;
-}
-
-/* small screens ABOUT ME */
-.aboutme {
-    padding: 10px;
-}
-
-.pagetitle {
-    color: #4aaaa5;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.img { 
-    margin: 10px auto;
-    border: 1px solid #ddd;
-    border-radius: 100%;
-    display: block;
-}
-
-.floattext {
-    margin-top: 15px;
-}
-
-.biolink {
-    text-decoration: none;
-}
-
-.biolink:hover {
-    color:black;
-}
-/* Footer SMALL */
-
-.footer {
-    position: fixed;
-    bottom:0;
-    left:0;
-    margin-bottom: 0;
-    margin-left: 0;
-    width: 100%;
-    height: 40px;
-    background-color: #666666;
-    color: white;
-    border-top: 4px solid #4aaaa5;
-    text-align: center;
-}
-
-.foottext {
-    padding-top: 2px;
-    color: #bbbbbb;
-}
-
-/* portfolio SMALL */
-
-.flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-} 
-
-.ptitle {
-    color: #4aaaa5;
-    font-size: 2rem;
-}
-
-.portbox1 {
-    width: 250px;
-    height: 250px;
-    background-image: url("../images/john.png");
-    display: block;
-    margin: 10px auto 10px;
-    border: 1px solid #ddd;
-}
-
-.portbox2 {
-    width: 250px;
-    height: 250px;
-    background-image: url("../images/dice.png");
-    display: block;
-    margin: 10px auto 10px;
-    border: 1px solid #ddd;
-}
-
-.portbox3 {
-    width: 250px;
-    height: 250px;
-    background-image: url("../images/drums.png");
-    display: block;
-    margin: 10px auto 10px;
-    border: 1px solid #ddd;
-}
-
-.portbox4 {
-    width: 250px;
-    height: 250px;
-    background-image: url("../images/ipad-startup.jpg");
-    display: block;
-    margin: 10px auto 10px;
-    border: 1px solid #ddd;
-}
-
-
-/* There are no SMALL style rules for Contact */
-
+@media screen and (min-width:769px) {
 
 /* header class styles */
-/* .headingbar {
+
+.headingbar {
     background-color: white;
     width: 100%;
     height: 80px;
@@ -208,7 +60,7 @@ p {
 }
 
 .header {
-    width: 960px;
+    width: 95%;
     margin: 0 auto;
 }
 .myname {
@@ -218,6 +70,7 @@ p {
     height: 80px;
     width: 195px;
     padding: auto 10px auto;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -241,27 +94,27 @@ p {
 }
 
 .wrapper {
-    width: 960px;
+    width: 95%;
     margin: 100px auto;
     background-color: white;
     border: 1px solid #ddd;
-} */
+}
 
 
 /* About Me Styles */
  
-/* .aboutme {
+.aboutme {
     padding: 10px;
 }
 
 .pagetitle {
     color: #4aaaa5;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
-.img { */
-    /* float:left; */
-    /* margin: 10px 15px 8px 0;
+.img { 
+    float:left;
+    margin: 10px 15px 8px 0;
     border: 1px solid #ddd;
     border-radius: 100%;
 }
@@ -276,23 +129,17 @@ p {
 
 .biolink:hover {
     color:black;
-} */
+} 
 
 /* Portfolio Styles */
 
 
-/* .flex-container {
+.flex-container {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-} */
-/* This flex doesn't work for making the box responsive, 
-it only really affects the layout(because its parent isn't flex?) */
-
-.ptitle {
-    color: #4aaaa5;
-    font-size: 2rem;
 }
+/* flex container lays out items */
 
 .portbox1 {
     width: 250px;
@@ -336,10 +183,10 @@ it only really affects the layout(because its parent isn't flex?) */
     margin-right: 20px;
     margin-bottom: 30px;
     border: 1px solid #ddd;
-}
+} */
 
 /* add hover effect on portbox1-4 */
-/* .portbox1:hover {
+.portbox1:hover {
     opacity: 1;
 } 
 
@@ -353,16 +200,16 @@ it only really affects the layout(because its parent isn't flex?) */
     
 .portbox4:hover {
     opacity: 1;
-} */
+}
 
 
 
-/* Contact Styles */
+/* There are no specific Contact Styles (global) */
 
 
 /* Footer Styles */
 
-/* .footer {
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -377,4 +224,328 @@ it only really affects the layout(because its parent isn't flex?) */
 .foottext {
     padding-top: 12px;
     color: #bbbbbb;
-} */
+}
+
+}
+
+/* Tablet Sizes */
+
+@media (min-width:601px) and (max-width: 768px) {
+
+    /* header class styles */
+    .headingbar {
+        background-color: white;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        border-bottom: 2px solid #cccccc;
+    }
+    
+    .header {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .myname {
+        background-color: #4aaaa5;
+        color: white;
+        float: left;
+        height: 80px;
+        width: 195px;
+        padding: auto 10px auto;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .myname:hover {
+        background-color:white;
+        color:#4aaaa5;
+    }
+    
+    .nav {
+        float: right;
+        padding-top: 30px;
+    }
+    
+    .navlist {
+        margin: auto 10px;
+        text-decoration: none;
+    }
+    
+    .navlist:hover {
+        color:black;
+    }
+    
+    .wrapper {
+        width: 95%;
+        margin: 100px auto;
+        background-color: white;
+        border: 1px solid #ddd;
+    }
+    
+    
+    /* About Me Styles */
+     
+    .aboutme {
+        padding: 10px;
+    }
+    
+    .pagetitle {
+        color: #4aaaa5;
+        font-size: 1rem;
+    }
+    
+    .img { 
+        float:left;
+        margin: 10px 15px 8px 0;
+        border: 1px solid #ddd;
+        border-radius: 100%;
+    }
+    
+    .floattext {
+        margin-top: 15px;
+    }
+    
+    .biolink {
+        text-decoration: none;
+    }
+    
+    .biolink:hover {
+        color:black;
+    }
+    
+    /* Portfolio Styles */
+    
+    
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    /* This flex doesn't work for making the box responsive, 
+    it only really affects the layout(because its parent isn't flex?) */
+    
+    .ptitle {
+        color: #4aaaa5;
+        font-size: 2rem;
+    }
+    
+    .portbox1 {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/john.png");
+        opacity: 0.7;
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        border: 1px solid #ddd;
+    }
+    
+    .portbox2 {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/dice.png");
+        opacity: 0.7;
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        border: 1px solid #ddd;
+    }
+    
+    .portbox3 {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/drums.png");
+        opacity: 0.7;
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        border: 1px solid #ddd;
+    }
+    
+    .portbox4 {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/ipad-startup.jpg");
+        opacity: 0.7;
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        border: 1px solid #ddd;
+    }
+    
+    
+    /* Footer Styles */
+    
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 75px;
+        background-color: #666666;
+        color: white;
+        border-top: 8px solid #4aaaa5;
+        text-align: center;
+    }
+    
+    .foottext {
+        padding-top: 12px;
+        color: #bbbbbb;
+    }
+    }
+
+    /* Smallest screen size, max 640px */
+
+@media screen and (max-width: 640px) {
+
+    .headingbar {
+        background-color: white;
+        width: 100%;
+        height: 60px;
+        border-bottom: 2px solid #cccccc;
+        margin-top: 0;
+    }
+    
+    .header {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .myname {
+        background-color: #4aaaa5;
+        color: white;
+        padding-top: 5px;
+        height: 50px;
+        width: 100%;
+        margin: 0 auto 0;
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: none;
+        font-family:'Georgia', Times, Times New Roman, serif;
+    }
+    
+    .nav {
+        margin-top: 0;
+        margin-bottom: 20px;
+        background-color: white;
+        text-align: center;
+        height: 30px;
+        padding-top: 10px;
+        width: 100%;
+        text-decoration: none;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .nav a {
+        padding: 0 5px 0;
+    }
+    
+    .wrapper {
+        width: 95%;
+        margin: 100px auto 0;
+        background-color: white;
+        border: 1px solid #ddd;
+    }
+    
+    /* small screens ABOUT ME */
+    .aboutme {
+        padding: 10px;
+    }
+    
+    .pagetitle {
+        color: #4aaaa5;
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .img { 
+        margin: 10px auto;
+        border: 1px solid #ddd;
+        border-radius: 100%;
+        display: block;
+    }
+    
+    .floattext {
+        margin-top: 15px;
+    }
+    
+    .biolink {
+        text-decoration: none;
+    }
+    
+    .biolink:hover {
+        color:black;
+    }
+    /* Footer SMALL */
+    
+    .footer {
+        position: fixed;
+        bottom:0;
+        left:0;
+        margin-bottom: 0;
+        margin-left: 0;
+        width: 100%;
+        height: 40px;
+        background-color: #666666;
+        color: white;
+        border-top: 4px solid #4aaaa5;
+        text-align: center;
+    }
+    
+    .foottext {
+        padding-top: 2px;
+        color: #bbbbbb;
+    }
+    
+    /* portfolio SMALL */
+    
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    } 
+    
+    .ptitle {
+        color: #4aaaa5;
+        font-size: 2rem;
+    }
+    
+    .portbox1 {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/john.png");
+        display: block;
+        margin: 10px auto 10px;
+        border: 1px solid #ddd;
+    }
+    
+    .portbox2 {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/dice.png");
+        display: block;
+        margin: 10px auto 10px;
+        border: 1px solid #ddd;
+    }
+    
+    .portbox3 {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/drums.png");
+        display: block;
+        margin: 10px auto 10px;
+        border: 1px solid #ddd;
+    }
+    
+    .portbox4 {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/ipad-startup.jpg");
+        display: block;
+        margin: 10px auto 10px;
+        border: 1px solid #ddd;
+    }
+    }
+    
+    
