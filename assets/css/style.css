@@ -230,7 +230,7 @@ p {
 
 /* Tablet Sizes */
 
-@media (min-width:601px) and (max-width: 768px) {
+@media (min-width:641px) and (max-width: 768px) {
 
     /* header class styles */
     .headingbar {
@@ -293,7 +293,7 @@ p {
     
     .pagetitle {
         color: #4aaaa5;
-        font-size: 1rem;
+        font-size: 2rem;
     }
     
     .img { 
@@ -335,7 +335,6 @@ p {
         width: 250px;
         height: 250px;
         background-image: url("../images/john.png");
-        opacity: 0.7;
         display: inline-block;
         margin-right: 20px;
         margin-bottom: 30px;
@@ -346,7 +345,6 @@ p {
         width: 250px;
         height: 250px;
         background-image: url("../images/dice.png");
-        opacity: 0.7;
         display: inline-block;
         margin-right: 20px;
         margin-bottom: 30px;
@@ -357,7 +355,6 @@ p {
         width: 250px;
         height: 250px;
         background-image: url("../images/drums.png");
-        opacity: 0.7;
         display: inline-block;
         margin-right: 20px;
         margin-bottom: 30px;
@@ -368,7 +365,6 @@ p {
         width: 250px;
         height: 250px;
         background-image: url("../images/ipad-startup.jpg");
-        opacity: 0.7;
         display: inline-block;
         margin-right: 20px;
         margin-bottom: 30px;
@@ -443,7 +439,7 @@ p {
     
     .wrapper {
         width: 95%;
-        margin: 100px auto 0;
+        margin: 60px auto 50px;
         background-color: white;
         border: 1px solid #ddd;
     }
